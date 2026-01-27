@@ -1,3 +1,5 @@
+//Sum of its proper divisors (excluding itself) = number
+// 6 → 1 + 2 + 3 = 6
 
 import java.util.Scanner;
 
@@ -7,7 +9,7 @@ public class PerfectNumber{
         int num = sc.nextInt();
         int sum = 0;
 
-        for(int i=1; i<=num; i++){
+        for(int i=1; i<= num / 2; i++){
             if(num % i == 0){
                 sum += i;
             }

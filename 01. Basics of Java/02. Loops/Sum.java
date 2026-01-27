@@ -1,3 +1,5 @@
+// sum of 1 to n
+
 import java.util.Scanner;
 
 public class Sum {
