@@ -7,7 +7,7 @@
 // O(1)  (constant space)
 
 
-public class LargestNum{
+public class MaxNum{
 
     public static int largestNum(int numbers[]){
        int largest = Integer.MIN_VALUE;
