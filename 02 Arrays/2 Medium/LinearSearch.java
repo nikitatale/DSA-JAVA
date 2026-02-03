@@ -1,3 +1,8 @@
+//Loop runs from 0 to array length & in every iteration we compares the index value with target
+// array length is n size so we performs n operations
+// worst case target is not present in array
+// Time Complexity is O(n)
+
 public class LinearSearch{
     
     public static void searchNum(int nums[], int target){
