@@ -1,3 +1,6 @@
+//Time complexity - O(n²)
+//space complexity - O(1)
+
 public class FirstRepeatingElement{
     
     public static int repeatedElement(int nums[]){
@@ -14,7 +17,7 @@ public class FirstRepeatingElement{
     
     public static void main(String[] args) {
         int nums[] = { 34, 2, 1, 1, 67, 67, 89};
-        int res = repeatedElement(nums);
-        System.out.println(res + " is first repeating element in array");
+        int element = repeatedElement(nums);
+        System.out.println(element + " is first repeating element in array");
     }
 }

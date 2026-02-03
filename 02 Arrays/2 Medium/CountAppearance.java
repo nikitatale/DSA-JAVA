@@ -1,3 +1,6 @@
+//Time Complexity - O(n)
+//Space Complexity - O(1)
+
 public class CountAppearance{
 
     public static int countAppearance(int nums[], int target){
