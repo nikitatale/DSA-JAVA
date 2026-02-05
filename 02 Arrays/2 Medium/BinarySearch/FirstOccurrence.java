@@ -30,7 +30,7 @@ public class FirstOccurrence{
         int nums[] = {3, 4, 6, 7, 14, 14, 19};
         int target = 14;
         int index = findFirstOccurrence(nums, target);
-        System.out.println(index);
+        System.out.println("Index of first occurrence = " + index);
     }
 }
 
