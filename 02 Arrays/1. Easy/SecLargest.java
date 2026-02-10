@@ -8,6 +8,8 @@ public class SecLargest {
         if(largest < nums[i]){
             secLarge = largest;
             largest = nums[i];
+        } else if(nums[i] > secLarge && nums[i] != largest){
+            secLarge = nums[i];
         }
        }
 
@@ -15,7 +17,7 @@ public class SecLargest {
     }
     
     public static void main(String[] args) {
-        int nums[] = { 2, 4, 1, 5, 6, 3, 8, 9};
+        int nums[] = { 2, 4, 1, 5, 6, 3, 8, 10, 9};
         secondLargestNum(nums);
     }
 }
