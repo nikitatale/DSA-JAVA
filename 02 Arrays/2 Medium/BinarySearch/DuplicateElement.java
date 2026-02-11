@@ -1,22 +1,23 @@
 public class DuplicateElement {
 
     public static void findDuplicates(int[] nums) {
-        boolean found = false;
+                boolean isDuplicate = false;
 
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] == nums[i - 1]) {
-                System.out.println("Duplicate: " + nums[i]);
-                found = true;
-            }
+        for(int i=0; i<nums.length; i++){
+           for(int j=i+1; j<nums.length; j++){
+               if(nums[i] == nums[j]){
+                   System.out.print(nums[i] + " ");
+                   isDuplicate = true;
+               }
+           }
         }
-
-        if (!found) {
-            System.out.println("No duplicates found");
+        if(!isDuplicate){
+            System.out.print("No duplicate found");
         }
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4, 4, 5, 6, 6};
+        int[] nums = {1, 2, 3, 4, 5, 3, 6};
         findDuplicates(nums);
     }
 }
