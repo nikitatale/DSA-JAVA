@@ -1,3 +1,11 @@
+// numbers = [2,7,11,15], 
+// target = 9
+// Output: [1,2]
+// Two pointer logic correct
+// 1-based indexing correct
+// Break used correctly
+// O(n) solution
+
 
 import java.util.Arrays;
 
