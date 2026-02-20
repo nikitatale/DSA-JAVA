@@ -8,6 +8,8 @@
 // Peak cannot be at last index
 // Mountain array always has increasing then decreasing part
 
+// Time → O(log n) (Binary Search)
+// Space → O(1)
 
 
 public class PeakIndexInMountainArray{
