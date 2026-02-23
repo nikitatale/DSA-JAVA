@@ -45,7 +45,7 @@ public class FrequencyCount {
         if (first == -1) return 0;
 
         int last = lastOccurrence(nums, target);
-        return last - first + 1;
+        return last - first + 1; 
     }
 
     public static void main(String[] args) {
