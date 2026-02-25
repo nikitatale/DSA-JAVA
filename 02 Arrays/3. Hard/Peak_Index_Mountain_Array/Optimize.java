@@ -12,7 +12,7 @@
 // Space → O(1)
 
 
-public class PeakIndexInMountainArray{
+public class Optimize{
 
     public static  int peakIndexInMountainArray(int[] arr) {
         int start = 1, end = arr.length-2;
