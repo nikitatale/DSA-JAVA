@@ -1,7 +1,7 @@
 // We used Sorting. In sorting array is converted into sorted elements asc or desc
 // 3,3,4,2,3  = 2,3,3,3,4
 // same elements placed in contiguous order so we can easily tracked frequency and check > n/2 and return element
-// Time - O(O log n)
+// Time - O(n log n)
 
 
 import java.util.Arrays;
