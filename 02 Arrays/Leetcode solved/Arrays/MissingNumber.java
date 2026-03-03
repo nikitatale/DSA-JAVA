@@ -1,3 +1,5 @@
+// Time - O(n log n) Becuase array is sorted
+// Space - O(1)
 
 import java.util.Arrays;
 
