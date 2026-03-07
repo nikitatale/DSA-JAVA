@@ -13,7 +13,8 @@ import java.util.Arrays;
 
 public class Optimized{
 
-        public static void nextPermutation(int nums[]){
+public static void nextPermutation(int nums[]){
+
         int pivot = -1; // if there is no pivot then value will be -1
 
         //find pivot element
@@ -27,6 +28,7 @@ public class Optimized{
         //if pivot still -1 then reverse array
         if(pivot == -1){
             Arrays.sort(nums);
+            return; 
         }
 
         // find next larger element than pivot
