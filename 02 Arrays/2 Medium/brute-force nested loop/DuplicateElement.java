@@ -1,3 +1,5 @@
+// Time - O(n^2)
+
 public class DuplicateElement {
 
     public static void findDuplicates(int[] nums) {
@@ -21,3 +23,22 @@ public class DuplicateElement {
         findDuplicates(nums);
     }
 }
+
+
+// Time = O(n)
+
+// if array modification allowed
+
+// Arrays.sort(nums);
+
+//  for(int i=1; i<nums.length; i++){
+//            boolean isDuplicate = false;
+//            if(nums[i] == nums[i-1]){
+//                isDuplicate = true;
+//            }
+
+//            if(isDuplicate){
+//                return nums[i];
+//            }
+//        }
+//        return -1;
