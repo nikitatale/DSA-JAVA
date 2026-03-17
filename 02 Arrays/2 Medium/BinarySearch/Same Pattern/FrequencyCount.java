@@ -1,3 +1,7 @@
+// Time = O(log n)
+// Space =  O(1)
+
+
 public class FrequencyCount {
 
     public static int firstOccurrence(int[] nums, int target) {

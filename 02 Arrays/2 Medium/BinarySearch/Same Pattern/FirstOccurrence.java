@@ -4,6 +4,9 @@
 // but may be element exists in left
 // so move left 
 
+// Time = O(log n)
+// Space =  O(1)
+
 
 public class FirstOccurrence{
 

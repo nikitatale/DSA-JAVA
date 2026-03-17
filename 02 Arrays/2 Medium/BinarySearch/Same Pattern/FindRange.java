@@ -1,3 +1,7 @@
+// Time = O(log n)
+// Space =  O(1)
+
+
 public class FindRange {
 
     public static int firstIndex(int[] nums, int target) {

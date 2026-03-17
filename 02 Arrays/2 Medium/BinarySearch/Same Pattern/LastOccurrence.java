@@ -1,3 +1,6 @@
+// Time = O(log n)
+// Space =  O(1)
+
 public class LastOccurrence{
     
     public static int lastOccurrence(int nums[], int target){
