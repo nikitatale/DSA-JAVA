@@ -1,3 +1,6 @@
+// Time = O(n2)
+// Space = O(n)
+
 public class RemoveOcc{
     public static String removeOccurrences(String s, String part) {
          while(s.contains(part)){
