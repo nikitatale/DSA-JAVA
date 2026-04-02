@@ -1,11 +1,12 @@
+// This is a brute-force approach where I compare each element with every other element to find 
+// duplicates and check each number from 1 to n² 
+// to find the missing element. Time complexity is O(n⁴).
+
 
 import java.util.Arrays;
 
 
-
-
 public class BruteForce{
-
    
     public static int[] repeatMissing(int nums[][]) {
         int repeatEle = 0;
