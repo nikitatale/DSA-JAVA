@@ -12,14 +12,8 @@ public class Leetcode{
                  i++;
             }
 
-            
-            if(count > 0){
                 sb.append(count.toString());
-            } else {
                 sb.append(word.charAt(i));
-            }
-
-            sb.append(word.charAt(i));
         }
 
         return sb.toString();
