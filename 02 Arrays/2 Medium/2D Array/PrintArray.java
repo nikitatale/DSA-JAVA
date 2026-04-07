@@ -27,3 +27,13 @@ public class PrintArray{
         printArr(nums);
     }
 }
+
+
+// enhanced for loop - print array
+
+// for(int n[] : nums){
+//             for(int m: n){
+//                 System.out.print(m + " ");
+//             }
+//             System.out.println();
+// }
