@@ -1,3 +1,7 @@
+// Time Complexity = O(log n)
+// Space Complexity = O(1)
+
+
 public class MinSortedArray{
 
         public static  int findMin(int[] nums) {
@@ -5,6 +9,8 @@ public class MinSortedArray{
 
         while(start < end){
            int mid = start + (end - start) / 2;
+
+            // right side sorted so end becomes mid
 
              if(nums[mid] <= nums[end]){
              end = mid;
