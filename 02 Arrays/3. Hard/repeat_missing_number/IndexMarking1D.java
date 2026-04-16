@@ -1,9 +1,5 @@
-// We are given an array of size n containing numbers from 1 to n, where one number is missing and one is repeated.
-// Instead of iterating over the array, we iterate from 1 to n (expected range).
-// For each number i, we count how many times it appears in the array.
-// If the count is 2, that number is the repeating element.
-// If the count is 0, that number is the missing element.
-// This approach uses nested loops, so the time complexity is O(n²).
+// Time → O(n)
+// Space → O(1)
 
 
 import java.util.Arrays;
@@ -15,19 +11,23 @@ public class IndexMarking1D{
          int repeat = -1;
          int missing = -1;
 
-         for(int num=1; num<=n; num++){
-            int count = 0;
+         // repeat
+         for(int i=0; i<n; i++){
+            int value = Math.abs(nums[i]);   // handle negative
 
-            for(int i=0; i<n; i++){
-                if(nums[i] == num){
-                  count++;
-                }
+            int index = value - 1;   // map value → index
+
+            if(nums[index] < 0){
+                repeat = value;      // already visited → repeat
+            } else{ 
+                nums[index] = -nums[index];   // mark as visited (negative)
             }
+         }
 
-            if(count == 2){
-                repeat = num;
-            } else if(count == 0){
-                missing = num;
+         // missing
+         for(int i=0; i<n; i++){
+            if(nums[i] > 0){
+                missing = i + 1;    // index + 1 → missing
             }
          }
 
