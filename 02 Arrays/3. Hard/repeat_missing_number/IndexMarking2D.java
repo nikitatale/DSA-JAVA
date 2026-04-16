@@ -11,7 +11,7 @@
 
 import java.util.Arrays;
 
-public class IndexMarking{
+public class IndexMarking2D{
 
     public static int[] repeatMissing(int nums[][]) {
         int n = nums.length;
