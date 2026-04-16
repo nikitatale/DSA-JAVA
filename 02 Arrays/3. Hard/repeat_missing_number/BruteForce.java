@@ -1,7 +1,9 @@
-// This is a brute-force approach where I compare each element with every other element to find 
-// duplicates and check each number from 1 to n² 
-// to find the missing element. Time complexity is O(n⁴).
-
+// Matrix size is n × n, so total elements = n², numbers should be from 1 to n².
+// Flatten socho matrix ko (ya directly traverse karo), har number ka count check karo.
+// Loop from 1 to n² (expected range).
+// For each number i, count how many times it appears in the matrix.
+// If count == 2 → repeating element, if count == 0 → missing element.
+// Time complexity still O(n⁴) (because for each number you scan full matrix).
 
 import java.util.Arrays;
 
@@ -9,39 +11,30 @@ import java.util.Arrays;
 public class BruteForce{
    
     public static int[] repeatMissing(int nums[][]) {
-        int repeatEle = 0;
-        int missingEle = 0;
-    
-        for(int i=0; i<nums.length; i++){
-            for(int j=0; j<nums[0].length; j++){
-               for(int x=0; x<nums.length; x++){
-                  for(int y=0; y<nums[0].length; y++){
-                    if(i == x && j == y) continue;
-                    if(nums[i][j] == nums[x][y]){
-                       repeatEle = nums[i][j];
-                    }
-                  }
-               }
+        int n = nums.length;
+        int repeat = -1;
+        int missing = -1;
+        
+
+        for(int num=1; num<=n*n; num++){
+            int count = 0;
+            for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+                if(nums[i][j] == num){
+                  count++;
+                }
             }
+        } 
+
+         if(count == 2){
+            repeat = num;
+         } else if(count == 0){
+            missing = num;
+         }
+
         }
 
-        for(int num=1; num<=nums.length*nums.length; num++){
-            boolean isMissing = false;
-            for(int i=0; i<nums.length; i++){
-               for(int j=0; j<nums.length; j++){
-                  if(nums[i][j] == num){
-                    isMissing = true;
-                    break;
-                  }
-               }
-            }
-
-            if(isMissing == false){
-                missingEle = num;
-            }
-        }
-
-         return new int[]{repeatEle, missingEle};
+        return new int[] {missing, repeat};
     }
 
 
