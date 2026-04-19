@@ -1,3 +1,7 @@
+//  Time = O(log n)
+//  Space = O(1)
+
+
 public class Optimize{
 
    public static int singleNumber(int[] nums) {
