@@ -1,0 +1,37 @@
+Sabse badi baat jo yaad rakhni hai — teen magic questions poochh apne aap se:
+
+Array/string sorted hai aur pair dhundhna hai? → Opposite ends
+Linked list ka problem hai? → Fast & Slow (99% cases)
+"Longest / shortest / minimum subarray ya substring" likha hai? → Sliding Window
+
+
+
+Opposite ends
+L=0, R=last
+Array is sorted
+"Find a pair" with sum/product condition
+Check palindrome
+"Maximize / minimize" area, distance
+Reverse something in-place
+3Sum, 4Sum pattern
+
+
+Fast & slow
+slow+1, fast+2
+Linked list — almost always this
+"Detect cycle" — dead giveaway
+Find middle of list
+Remove Nth node from end
+"Does it loop?" type question
+Happy number problem
+
+
+
+Sliding window
+Both start at 0
+"Longest subarray / substring"
+"Smallest subarray" with condition
+"Subarray of size k"
+Contiguous elements matter
+Max/min within a window
+Count subarrays with condition
