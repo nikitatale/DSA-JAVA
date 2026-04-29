@@ -1,3 +1,5 @@
+// Copy both arrays → sort / merge into third array
+
 // Copy → O(n+m)
 // Sorting → O((n+m) log(n+m))
 
@@ -10,18 +12,18 @@ import java.util.Arrays;
 public class BruteForce{
 
     public static int[] merge(int nums1[], int m, int nums2[], int n) {
-         int newArr[] = new int[m + n];
-         for(int i=0; i<nums1.length; i++){
+        int newArr[] = new int[m + n];
+        for(int i=0; i<nums1.length; i++){
             newArr[i] = nums1[i];
-         }
+        }
 
-         for(int j=0; j<nums2.length; j++){
-            newArr[nums2.length+j] = nums2[j];
-         }
+        for(int j=0; j<n; j++){
+        newArr[m+j]=nums2[j];
+        }
 
-         Arrays.sort(newArr);
+        Arrays.sort(newArr);
 
-         return newArr;
+        return newArr;
     }
        
 
